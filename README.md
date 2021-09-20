@@ -22,13 +22,17 @@ This project leverages python 3.7 with the following modules:
 
 * [pandas](https://github.com/pandas-dev/pandas) - For reading data into a DataFrame and analyzing data via statistics and plots.
 
-* [matplotlib](https://matplotlib.org/stable/users/index.html) - For embedding plots in the application.
+* [csv](https://docs.python.org/3/library/csv.html) - For reading and writing tabular data in CSV (Comma Seperated Values) format.
+
+* [pathlib](https://docs.python.org/3/library/pathlib.html) - For representing the file system path to a csv.
+
+* [tensorflow](https://github.com/tensorflow/tensorflow) - For running code across multiple platforms.
+
+* [keras](https://keras.io/about/) - For building models.
 
 * [sklearn](https://scikit-learn.org/stable/user_guide.html#) - For machine learning.
 
-* [imbalance-learn](https://pypi.org/project/imbalanced-learn/) - For re-sampling.
-
-* [pydotplus](https://pypi.org/project/pydotplus/) - For providing a Python Interface to Graphviz’s Dot language.
+* [matplotlib](https://matplotlib.org/stable/users/index.html) - For embedding plots in the application.
 
 ---
 
@@ -38,10 +42,9 @@ Before running the application first install the following dependencies:
 
 ```python
   pip install pandas
-  pip install mkdocs
+  pip install --upgrade tensorflow
   pip install -U scikit-learn
-  conda install -c conda-forge imbalanced-learn
-  conda install -c conda-forge pydotplus
+  pip install mkdocs
 ```
 
 ---
